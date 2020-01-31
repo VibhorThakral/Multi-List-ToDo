@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <h1 class="l-heading">My Todo App</h1>
+
+    <div class="all-lists">
+        <h2 class="m-heading">My Lists</h2>
+        <ul class="lists" data-lists></ul>
+
+        <form action="" data-new-list-form>
+            <input type="text" data-new-list-input placeholder="Create new list" class="new list">
+            <button class="btn create">+</button>
+        </form>
+    </div>
+
+    <div class="todo-list" data-todo-display-container>
+        <div class="todo-header">
+            <h2 class="m-heading" data-todo-title></h2>
+            <p class="todo-count" data-todo-count></p>
+        </div>
+
+        <div class="todo-body">
+            <div class="todos" data-todos></div>
+
+            <div class="new-todo">
+                <form action="" data-new-todo-form>
+                    <input type="text" data-new-todo-input placeholder="Create New Todo" class="new todo">
+                    <button class="btn create">+</button>
+                </form>
+            </div>
+
+            <div class="clear-list">
+                <button class="btn clear" data-clear-complete-todos-button>Clear Completed Todos</button>
+                <button class="btn clear" data-delete-list-button>Delete List</button>
+            </div>
+
+        </div>
+    </div>
+
+    <template id="todo-template">
+        <div class="todo">
+            <input type="checkbox" class="hmm"/>
+            <label>
+                <span class="custom-checkbox"></span>
+            </label>
+        </div>
+    </template>
+
+    <script src="https://kit.fontawesome.com/199d20639f.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
